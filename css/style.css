@@ -1,0 +1,128 @@
+/********************
+GENERAL
+********************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/********************
+DESKTOP
+********************/
+
+/********************
+HEADER 
+********************/
+header{
+    background-color: #0084fd;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header li{
+    padding-left: 30px;
+    font-size: 20px;
+}
+header li a{
+    color: white;
+}
+.hambuger-menu{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+/********************
+MAIN
+********************/
+main{
+    margin-top: 120px;
+}
+
+.position-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    background-color: #b5ddff;
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+    min-height: 400px;
+}
+.card.big{
+    width: calc(100% /3 *2 - 10px);
+    
+}
+
+.card.margin-right, .card.big{
+    margin-right: 20px;
+}
+/********************
+FOOTER
+********************/
+
+
+
+
+
+
+
+
+/********************
+    TABLET
+********************/
+@media all and (max-width:768px) {
+    /* HEADER */
+    header ul {
+        display: none;
+    }
+    .hambuger-menu{
+        display: inline;
+    }
+}
+
+
+
+
+/********************
+    SMARTPHONE
+********************/
+@media all and (max-width:480px) {
+    .card, .card.big{
+        width: 100%;
+    }
+    .card.margin-right, .card.big {
+        margin-right: 0;
+      }
+}
