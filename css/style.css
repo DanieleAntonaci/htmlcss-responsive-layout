@@ -12,7 +12,7 @@ body{
 }
 .container{
     max-width: 1400px;
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 main .container{
@@ -30,6 +30,10 @@ li{
 .white-words{
     color: white;
 }
+.violet-words{
+    color: #9792e4;
+}
+
 
 /* debug */
  section{
@@ -85,6 +89,9 @@ header .btn{
     color: white;
     font-size: 30px;
 }
+p{
+    line-height: 26px;
+}
 
 
 /********************
@@ -138,7 +145,6 @@ main{
 .card.big .left-content{
     width: 50%;
     padding: 20px;
-    line-height: 26px;
 }
 
 .card.big .left-content div{
@@ -160,9 +166,7 @@ main{
     font-size: 60px;
     color: #0084fd;
 }
-.card.little p{
-    line-height: 26px;
-}
+
 /* STRATEGIC PLANNING */
 .strategic-planning{
     display: flex;
@@ -174,9 +178,7 @@ main{
     width: 60%;
     margin: auto;
 }
-.strategic-planning p{
-    line-height: 26px;
-}
+
 .strategic-planning .left-content img{
     width: 100%;
     padding: 100px 0; 
@@ -208,7 +210,6 @@ main{
 }
 
 .strategic-planning .fa-arrow-down{
-    background-color: #9792e4;
     padding: 16px 20px;
     margin: 30px 0;
     font-size: 25px;
@@ -217,6 +218,51 @@ main{
 
 
 /* TESTIMONIALS */
+
+.testimonials-intro{
+    text-align: center;
+}
+.testimonials-intro .violet-words{
+    font-size: 3vw;
+    padding: 30px 0;
+}
+.testimonials-intro>p{
+    padding: 0 30px 40px;
+    font-size: 17px;
+}
+.partners-card{
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+}
+.partners-card img{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.partners-card .citation{
+    padding-left: 60px;
+    padding-right: 30px;
+}
+.partners-card .citation i{
+    font-size: 20px;
+}
+.partners-card .citation p{
+    font-size: 19px;
+    padding-bottom: 30PX;
+    color: #f3f3fc;
+    font-weight: 300;
+}
+.partners-card .citation h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
 
 /* BENEFIT OF WORKING WITH US */
 
@@ -240,6 +286,9 @@ FOOTER
     TABLET
 ********************/
 @media all and (max-width:900px) {
+    .container{
+        width: 90%;
+    }
     /* HEADER */
     header ul {
         display: none;
@@ -283,8 +332,12 @@ FOOTER
         padding-bottom: 30px;
         padding-right: 0;
     }
-}
+    /* Testimonial */
+    .testimonials-intro .violet-words{
+        font-size: 5vw;
 
+    }
+}
 
 
 
@@ -299,7 +352,24 @@ FOOTER
         margin-right: 0;
       }
 
-      .strategic-planning .left-content h2{
+    .strategic-planning .left-content h2{
         font-size: 200%;
+    }
+
+    .testimonials-intro .violet-words{
+        font-size: 35px;
+    }
+    .partners-card{
+        flex-direction: column;
+        text-align: center;
+    }
+    .partners-card .citation {
+        padding: 0;
+      }
+    .testimonials-intro.container{
+        margin-bottom: 0;
+    }
+    .testimonials-card.container{
+        margin-top: 0;
     }
 }
