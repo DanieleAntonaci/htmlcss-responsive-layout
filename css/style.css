@@ -16,7 +16,7 @@ body{
     margin: auto;
 }
 main .container{
-    margin: 100px auto;
+    margin: 80px auto;
 }
 a{
     text-decoration: none;
@@ -26,6 +26,9 @@ li{
 }
 .bg-violet{
     background-color: #9792e4;
+}
+.white-words{
+    color: white;
 }
 
 /* debug */
@@ -124,7 +127,6 @@ main{
     margin-right: 20px;
 }
 
-
 .card.big  img{
     height: 80%;
 
@@ -162,6 +164,56 @@ main{
     line-height: 26px;
 }
 /* STRATEGIC PLANNING */
+.strategic-planning{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    min-height: 600px;
+    padding-bottom: 70px;
+    width: 60%;
+    margin: auto;
+}
+.strategic-planning p{
+    line-height: 26px;
+}
+.strategic-planning .left-content img{
+    width: 100%;
+    padding: 100px 0; 
+}
+.strategic-planning .left-content{
+
+    width: 500px;
+    padding-right: 60px;
+}
+.strategic-planning .left-content h2{
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.strategic-planning .right-content{
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px 40px;
+    width: 400px;
+    text-align: center;
+}
+.strategic-planning .right-content img{
+    width: 60%;
+}
+.strategic-planning .right-content h3{
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.strategic-planning .fa-arrow-down{
+    background-color: #9792e4;
+    padding: 16px 20px;
+    margin: 30px 0;
+    font-size: 25px;
+    border-radius: 50%;
+}
 
 
 /* TESTIMONIALS */
@@ -195,14 +247,10 @@ FOOTER
     .hambuger-menu{
         display: inline;
     }
-/* 
-    .card.big img{
-        position: static;
-        height: 200px;
-    }
-    .card.big .left-content{
-        width: 100%;
-    } */
+
+
+    /* main */
+    /* PRENTATION */
     .card.big img{
         position: absolute;
         height: 200px;
@@ -215,6 +263,25 @@ FOOTER
     .card.big{
        min-height: 400px;
        
+    }
+    /* STRATEGIC PLANNING */
+    .strategic-planning{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .strategic-planning .left-content, .strategic-planning .right-content{
+        width: 80%;
+    }
+    .strategic-planning .left-content h2{
+        font-size: 340%;
+    }
+    .strategic-planning .left-content img{
+        padding: 60px 0;
+    }
+    .strategic-planning .left-content{
+        padding-bottom: 30px;
+        padding-right: 0;
     }
 }
 
@@ -231,4 +298,8 @@ FOOTER
     .card.margin-right, .card.big {
         margin-right: 0;
       }
+
+      .strategic-planning .left-content h2{
+        font-size: 200%;
+    }
 }
