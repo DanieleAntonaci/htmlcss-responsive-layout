@@ -6,9 +6,6 @@ GENERAL
     padding: 0;
     box-sizing: border-box ;
 }
-body{
-    font-family: 'Tajawal', sans-serif;
-}
 
 .container{
     max-width: 1400px;
@@ -66,10 +63,15 @@ header ul{
 
 header li{
     padding-left: 30px;
-    font-size: 20px;
 }
 header li a{
     color: white;
+}
+header .btn{
+    background-color: white;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 20px;
 }
 .hambuger-menu{
     display: none;
