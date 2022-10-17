@@ -102,7 +102,7 @@ main{
 }
 
 
-    /* PRENTATION */
+    /* PRESENTATION */
 .position-card{
     display: flex;
     flex-wrap: wrap;
@@ -299,7 +299,7 @@ FOOTER
 
 
     /* main */
-    /* PRENTATION */
+    /* PRESENTATION */
     .card.big img{
         position: absolute;
         height: 200px;
@@ -332,10 +332,16 @@ FOOTER
         padding-bottom: 30px;
         padding-right: 0;
     }
-    /* Testimonial */
+    /* TESTIMONIALS */
     .testimonials-intro .violet-words{
         font-size: 5vw;
 
+    }
+    .testimonials-intro.container{
+        margin-bottom: 0;
+    }
+    .testimonials-card.container{
+        margin-top: 0;
     }
 }
 
@@ -345,17 +351,21 @@ FOOTER
     SMARTPHONE
 ********************/
 @media all and (max-width:480px) {
+    /* MAIN */
+    /* PRESENTATION */
     .card, .card.big{
         width: 100%;
     }
     .card.margin-right, .card.big {
         margin-right: 0;
-      }
+    }
 
+    /* STRATEGIC PLANNING */
     .strategic-planning .left-content h2{
         font-size: 200%;
     }
 
+    /* TESTIMONIALS */
     .testimonials-intro .violet-words{
         font-size: 35px;
     }
@@ -366,10 +376,5 @@ FOOTER
     .partners-card .citation {
         padding: 0;
       }
-    .testimonials-intro.container{
-        margin-bottom: 0;
-    }
-    .testimonials-card.container{
-        margin-top: 0;
-    }
+
 }
