@@ -39,15 +39,10 @@ li{
     object-fit: cover;
     border-radius: 50%;
 }
-
-/* debug */
- section{
+section{
     min-height: 600px;
 }
-footer{
-    min-height: 300px;
-    background-color: black;
-}
+
 
 /********************
 DESKTOP
@@ -311,6 +306,7 @@ main{
 .about-us{
     display: flex;
     justify-content: space-between;
+    padding: 0 70px;
 }
 .about-us-left{
     padding-right: 60px;
@@ -353,13 +349,67 @@ main{
     right: 10%;
 }
 /* GET STARTED */
+.get-start {
+    text-align: center;
+    padding-top: 50px;
+}
+.get-start .upper-text{
+    opacity: .6;
+    font-size: 20px;
+}
+.get-start h3{
+    padding: 30px 0;
+    font-size: 50px;
+}
+.get-start .yellow-title{
+    color: #fdc15f;
+    display: block;
+    font-size: 90px;
+    padding-top: 30px;
+}
+.get-start div{
+    width: 500px;
+    margin: auto;
+    line-height: 30px;
+}
+.get-start .btn{
+    display: block;
+    color: #9792e4;
+    background-color: white;
+    padding: 10px;
+    width: 170px;
+    margin: 20px auto;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+.get-start .under-line{
+    text-decoration: underline;
+}
+.get-start i{
+    font-size: 5px;
+}
 
 
 /********************
 FOOTER
 ********************/
-
-
+footer{
+    min-height: 200px;
+    background-color: #333333;
+}
+footer div{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+footer div:first-child{
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+footer a{
+    color: #9792e4;
+    text-decoration: underline;
+}
 
 
 
@@ -383,6 +433,8 @@ FOOTER
 
 
     /* main */
+
+
     /* PRESENTATION */
     .card.big img{
         position: absolute;
@@ -397,6 +449,8 @@ FOOTER
        min-height: 400px;
        
     }
+
+
     /* STRATEGIC PLANNING */
     .strategic-planning{
         flex-direction: column;
@@ -416,6 +470,8 @@ FOOTER
         padding-bottom: 30px;
         padding-right: 0;
     }
+
+
     /* TESTIMONIALS */
     .testimonials-intro .violet-words{
         font-size: 5vw;
@@ -424,13 +480,23 @@ FOOTER
     .testimonials-intro.container{
         margin-bottom: 0;
     }
+    .testimonials-intro p{
+    padding-bottom: 40px;
+    }
     .testimonials-card.container{
         margin-top: 0;
     }
 
-    /*  */
+
+    /* BENEFIT OF WORKING WITH US */
     .benefits-card{
         width: calc(50% - 20px);
+    }
+
+
+    /* ABOUT US */
+    .about-us{
+        padding: 0;
     }
 }
 
@@ -441,6 +507,8 @@ FOOTER
 ********************/
 @media all and (max-width:480px) {
     /* MAIN */
+
+
     /* PRESENTATION */
     .card, .card.big{
         width: 100%;
@@ -466,10 +534,12 @@ FOOTER
         height: 80vw;
     }
 
+
     /* STRATEGIC PLANNING */
     .strategic-planning .left-content h2{
         font-size: 200%;
     }
+
 
     /* TESTIMONIALS */
     .testimonials-intro .violet-words{
@@ -481,13 +551,17 @@ FOOTER
     }
     .partners-card .citation {
         padding: 0;
-      }
-      /*  */
-      .benefits-card{
+    }
+    
+
+    /* BENEFIT OF WORKING WITH US */
+    .benefits-card{
         min-width: 180px;
         width: 100%;
         text-align: center;
     }
+
+
     /* about us */
     .about-us{
         display: block;
@@ -502,5 +576,16 @@ FOOTER
     }
     .about-us-right div i{
         right: 25%;
+    }
+    /* GET STARTED */
+    .get-start, .get-start div{
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .get-start .yellow-title{
+        font-size: 4.2rem;
+    }
+    .get-start h3{
+        font-size: 1.8rem;
     }
 }
