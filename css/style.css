@@ -7,7 +7,7 @@ GENERAL
     box-sizing: border-box ;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
     font-size: 15px;
 }
 .container{
@@ -208,6 +208,9 @@ main{
     font-size: 25px;
     padding: 20px 0;
 }
+.strategic-planning .right-content p{
+    font-style: italic;
+}
 
 .strategic-planning .fa-arrow-down{
     padding: 16px 20px;
@@ -227,7 +230,6 @@ main{
     padding: 30px 0;
 }
 .testimonials-intro>p{
-    padding: 0 30px 40px;
     font-size: 17px;
 }
 .partners-card{
@@ -265,6 +267,45 @@ main{
 
 
 /* BENEFIT OF WORKING WITH US */
+.benefit .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.benefit h2{
+    font-size: 3rem;
+    padding: 60px;
+    text-align: center;
+
+}
+.benefits-card{
+    
+    min-width: 275px;
+    width: 32%;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.benefits-card span{
+    font-size: 70px;
+    font-weight: 600;
+}
+.benefits-card h3{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.benefits-card p{
+    color: black;
+    padding-bottom: 30px;
+    opacity: .6;
+}
+.benefits-card a{
+    letter-spacing: 2px;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
 
 /* ABOUT US */
 
@@ -343,6 +384,11 @@ FOOTER
     .testimonials-card.container{
         margin-top: 0;
     }
+
+    /*  */
+    .benefits-card{
+        width: calc(50% - 20px);
+    }
 }
 
 
@@ -356,8 +402,25 @@ FOOTER
     .card, .card.big{
         width: 100%;
     }
+    .card h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 17px;
+    }
     .card.margin-right, .card.big {
         margin-right: 0;
+    }
+    .card.big  .left-content{
+        padding-bottom: 90vw;
+    }
+    .card.big .left-content div{
+        text-align: center;
+    }
+    .card.big img{
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 80vw;
     }
 
     /* STRATEGIC PLANNING */
@@ -376,5 +439,11 @@ FOOTER
     .partners-card .citation {
         padding: 0;
       }
+      /*  */
+      .benefits-card{
+        min-width: 180px;
+        width: 100%;
+        text-align: center;
+    }
 
 }
